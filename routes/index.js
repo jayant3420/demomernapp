@@ -17,7 +17,6 @@ router.post("/save", (req, res) => {
   newBlogPost
     .save()
     .then((response) => {
-      console.log("data saved");
       res.json({
         status: 200,
         msg: "data saved successfully"

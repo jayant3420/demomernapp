@@ -17,7 +17,6 @@ class App extends React.Component {
       .get("/api")
       .then((response) => {
         this.setState({ posts: response.data });
-        console.log(this.state.posts);
       })
       .catch((error) => {
         console.log(error);
@@ -42,7 +41,6 @@ class App extends React.Component {
       data: payload
     })
       .then((response) => {
-        console.log(response.data);
         this.resetInputFields();
         this.getBlogPosts();
       })
