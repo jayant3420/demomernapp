@@ -67,7 +67,7 @@ class App extends React.Component {
     //JSX
     return (
       <div>
-        <h2>Welcome to My App</h2>
+        <h2>Welcome to My Best App</h2>
         <form onSubmit={this.submitHandler}>
           <div className="form-input">
             <input
